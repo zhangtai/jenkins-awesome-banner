@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./controller.css">
+    <script src="./controller.js"></script>
+    <title>Jenkins Awesome Banner</title>
+    <style>
+        body, button, input, optgroup, select, textarea {
+            font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div id="systemmessage">
+
+<!-- Start -->
+<p>🔴 No deploy between <span style="color: #fff">{: .tag .is-danger } 31-Jan-2022</span> and <span style="color: #fff">{: .tag .is-danger } 06-Feb-2022</span></p>
+<hr>
+<div style="border-width:20">
+    <div>
+        <h4>Build agents and tools</h4>
+        <div>
+            <p>
+                <a href="#">{: .button .is-link .is-small }🔨 Linux</a>
+                <a href="#">{: .button .is-link .is-small }🔨 Windows</a>    
+            </p>
+            <div>[[ tag-addons-group ]] {.is-dark}linux👷‍♂️:{.is-info}linux|{.is-dark}linux👷‍♂️:{.is-info}docker:{.is-dark}🐳|{.is-dark}windows👷‍♂️:{.is-warning}windows</div>
+        </div>
+    </div>
+    <div>
+        <h4>Migration guides</h4>
+        <ul>
+            <li><a href="#">Update service account</li>
+            <li><a href="#">Add timeout to pipeline</a></li>
+        </ul>
+    </div>
+</div>
+<hr>
+<div>
+    Support: 
+    <a href="#">{: .button .is-link .is-small } 📘 Wiki</a>
+    <a href="#">{: .button .is-link .is-small } 🙋‍♂️ Service Requst</a>
+</div>
+<!-- End -->
+
+</div>
+</body>
+</html>
