@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
     const makeTagGroup = (groupParamRaw) => {
-        console.log(groupParamRaw);
         let control = document.createElement("div");
         let group = document.createElement("div")
         control.classList.add("control")
@@ -58,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     const createCustomElement = (name, paramsRaw) => {
         if (name == "tag-addons-group") {
-            // console.log(paramsRaw);
             let wrapper = document.createElement("div");
             wrapper.classList.add("field", "is-grouped", "is-grouped-multiline")
             const params = paramsRaw.split("|")
