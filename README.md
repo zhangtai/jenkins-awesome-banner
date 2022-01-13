@@ -8,11 +8,15 @@ There are some minimium css styles defined in `style.css` file are copied from [
 
 ## Setup
 
-1. Copy the `script.js` and `style.js` files into `$JENKINS_HOME/userContent` folder.
-1. In the `Configure` page of Jenkins, go to `Theme` section, add:
+```shell
+npm install # to install dependencies
+npm run build # to build css and javascript files
+```
 
-  - **CSS URL**: https://jenkins.example.com/userContent/style.css
-  - **JavaScript URL**: https://jenkins.example.com/userContent/script.js
+1. e.g. copy the `dist/index.c7fefc6d.js` and `dist/index.6c5d95df.css` files into `$JENKINS_HOME/userContent` folder.
+1. In the `Configure` page of Jenkins, go to `Theme` section, add:
+  - **CSS URL**: https://jenkins.example.com/userContent/index.6c5d95df.css
+  - **JavaScript URL**: https://jenkins.example.com/userContent/index.c7fefc6d.js
 
 ## Usage
 
